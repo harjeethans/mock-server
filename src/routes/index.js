@@ -1,35 +1,35 @@
 // Import our Controllers
-const carController = require('../controllers/carController')
+const tenantController = require('../controllers/tenantController')
 
 // Import Swagger documentation
-// const documentation = require('./documentation/carApi')
+// const documentation = require('./documentation/tenantApi')
 
 const routes = [
   {
     method: 'GET',
-    url: '/api/cars',
-    handler: carController.getCars
+    url: '/api/tenants',
+    handler: tenantController.getTenants
   },
   {
     method: 'GET',
-    url: '/api/cars/:id',
-    handler: carController.getSingleCar
+    url: '/api/tenants/:id',
+    handler: tenantController.getSingleTenant
   },
   {
     method: 'POST',
-    url: '/api/cars',
-    handler: carController.addCar,
-    // schema: documentation.addCarSchema
+    url: '/api/tenants',
+    handler: tenantController.addTenant
+    // schema: documentation.addTenantSchema
   },
   {
     method: 'PUT',
-    url: '/api/cars/:id',
-    handler: carController.updateCar
+    url: '/api/tenants/:id',
+    handler: tenantController.updateTenant
   },
   {
     method: 'DELETE',
-    url: '/api/cars/:id',
-    handler: carController.deleteCar
+    url: '/api/tenants/:id',
+    handler: tenantController.deleteTenant
   }
 ]
 

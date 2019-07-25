@@ -12,6 +12,9 @@ const tenantsJson = require('./tenants.json');
 const mongoose = require('mongoose')
 const ObjectId = mongoose.Schema.Types.ObjectId
 
+const Tenant = require('../models/Tenant')
+
+/*
 const tenantSchema = new mongoose.Schema({
 	name: String,
 	email: String,
@@ -22,9 +25,8 @@ const tenantSchema = new mongoose.Schema({
   phone: String,
 	id: ObjectId
 })
-
 const Tenant = mongoose.model('Tenant', tenantSchema)
-
+*/
 console.log(tenantsJson.data.length);
 
 fastify.ready().then(

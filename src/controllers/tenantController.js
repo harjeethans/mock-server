@@ -7,7 +7,7 @@ const Tenant = require('../models/Tenant')
 // Get all tenants
 exports.getTenants = async ( req ) => {
 	try {
-    console.log('PARAMS passed : '  + JSON.stringify(req));
+    // console.log('PARAMS passed : '  + JSON.stringify(req));
     const limit = req.limit || 10;
     const skip = req.skip || 0;
     const sort = req.sort;
